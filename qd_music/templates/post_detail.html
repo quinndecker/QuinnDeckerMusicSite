@@ -1,0 +1,22 @@
+{% extends "base.html" %} {% block meta %}
+<meta name="description" content="{{ post.meta_description }}" />
+<title>Quinn Decker - {{ object.title }}</title>
+{% endblock meta %} {% block content %}
+
+<div class="content-wrap">
+  <div class="blog-post">
+    <h1 class="centerme">{{ object.title }} at {{ object.location }}</h1>
+    {% if post.show_date %}
+    <h2 class="centerme">{{ post.show_date }}</h2>
+    {% endif %}
+    <p class="blog-content">{{ object.content | safe }}</p>
+    {% if post.cover_image %}
+    <div class="blog-img">
+      <img src="{{ post.thumb.url }}" alt="{{ post.cover_image_alt }}" />
+    </div>
+    {% endif %}
+    <br />
+  </div>
+</div>
+
+{% endblock content %}

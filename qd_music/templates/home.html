@@ -1,0 +1,60 @@
+{% extends "base.html" %} {% block meta %}
+<meta name="description" content="" />
+<title>Quinn Decker</title>
+{% endblock meta %} {% block content %} {% load static %}
+
+<div class="wrapper">
+  <h1 class="bodyhead">"Everything All At Once" Out Now</h1>
+  <div class="centerme">
+    <ul class="streaming-links">
+      <li>
+        <a
+          href="https://open.spotify.com/album/5bHyml73U6fZPpTd7QHQCT?si=a99n98V5R8GbdWGqcnYdYw"
+          target="_blank"
+          ><img
+            class="spotify-logo"
+            src="{% static 'img/spotify-thumbnail.png' %} "
+            alt="spotify logo"
+        /></a>
+      </li>
+      <li>
+        <a
+          href="https://quinndecker.bandcamp.com/album/everything-all-at-once?fbclid=IwAR0pfEGRYfqVF7ZAyJBGmqJs0dtOMyxNdBuPSziKjTq8k7kal9tRu5qSvcQ"
+          target="_blank"
+          ><img
+            class="bandcamp-logo"
+            src="{% static 'img/bandcamp-logo.png' %}"
+            alt="bandcamp logo"
+        /></a>
+      </li>
+      <li>
+        <a
+          href="https://music.apple.com/us/album/everything-all-at-once/1578835669"
+          target="_blank"
+          ><img
+            class="applemusic-logo"
+            src="{% static 'img/applemusic-logo.png' %}"
+            alt="Apple Music Logo"
+        /></a>
+      </li>
+    </ul>
+  </div>
+  <div id="albumcover" class="centerme">
+    <img
+      src="{% static 'img/Everything All At Once Cover.jpg' %}"
+      alt="Album cover for Everything All At Once by Quinn Decker"
+    />
+  </div>
+  <h2 class="body-sub-head">Watch "Comfort Zone" Now</h2>
+  <div class="centerme">
+    <div class="video-container">
+      <iframe
+        class="video"
+        src="https://www.youtube.com/embed/--S-NuqktZs"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}

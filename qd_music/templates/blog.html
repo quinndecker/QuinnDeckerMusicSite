@@ -1,0 +1,27 @@
+{% extends "base.html" %} {% block meta %}
+<meta name="description" content="" />
+<title>Quinn Decker - Gigs</title>
+{% endblock meta %} {% block content %}
+<div class="content-wrap">
+  <h1 class="centerme">Gigs</h1>
+  <div class="breaker"></div>
+  <div class="posts">
+    {% for post in post_list %}
+    <div class="blog-post-list">
+      <a href="{% url 'post_detail' post.slug  %}">
+        <h2 class="blog-titles">
+          {{ post.title }} at {{ post.location }} - {{ post.show_date }}
+        </h2>
+      </a>
+      <div class="gig-thumbnail">
+        <img src="{{ post.thumb.url }}" alt="{{ post.cover_image_alt }}" />
+      </div>
+      <!--<p class="blog-preview text-black-50 h6">
+        {{ post.author }} | {{ post.created_on}}
+      </p>-->
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% endblock content %}

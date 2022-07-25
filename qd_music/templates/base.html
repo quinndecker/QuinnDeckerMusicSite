@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% block meta %} {% endblock meta %} {% load static %}
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="{% static 'styles.css' %}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <a class="homebutton" href="{% url 'homepage' %}"
+          ><h1>Quinn Decker</h1></a
+        >
+      </div>
+      <h2 class="base-subhead">
+        Recording Artist - Songwriter - Engineer - Producer
+      </h2>
+    </header>
+    <div class="sticky">
+      <nav>
+        <ul class="navlist">
+          <li><a href="{% url 'gigs' %}">Gigs</a></li>
+          <li><a href="">Music</a></li>
+          <li><a href="">Credits</a></li>
+          <li><a href="">Booking</a></li>
+          <li><a href="">About</a></li>
+        </ul>
+      </nav>
+    </div>
+    {% block content %}{% endblock %}
+    <footer>
+      <ul class="foot-list">
+        <li>
+          <a
+            href="https://open.spotify.com/artist/2z1dMfOeEhnxAMRf45Y0gM?si=FOdAQ8PlTKeVCEfBn8skwg"
+            target="_blank"
+            ><img
+              src="{% static 'img/spotify-thumbnail.png' %}"
+              alt="spotify logo"
+              class="spotify-logo"
+          /></a>
+        </li>
+        <li>
+          <a href="https://quinndecker.bandcamp.com/" target="_blank"
+            ><img
+              src="{% static 'img/bandcamp-logo.png' %}"
+              alt="bandcamp logo"
+              class="bandcamp-logo"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://music.apple.com/us/artist/quinn-decker/1476012389"
+            target="_blank"
+            ><img
+              src="{% static 'img/applemusic-logo.png' %}"
+              alt="apple music logo"
+              class="applemusic-logo"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/quinndecker_/" target="_blank"
+            ><img
+              class="ig-logo"
+              src="{% static 'img/ig-logo.png' %}"
+              alt="instagram logo"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/QuinnDeckerMusic" target="_blank"
+            ><img
+              class="fb-logo"
+              src="{% static 'img/fb-logo.png' %}"
+              alt="facebook logo"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://www.youtube.com/channel/UCspnPrvLllgbdTxXeSuw6hA"
+            target="_blank"
+            ><img
+              class="yt-logo"
+              src="{% static 'img/yt-logo.png' %}"
+              alt="youtube logo"
+          /></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

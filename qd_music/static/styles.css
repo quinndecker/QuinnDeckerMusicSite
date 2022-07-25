@@ -1,0 +1,160 @@
+:root {
+  --main-bg-color: #c0ccd8;
+  --body-text-color: #07080a;
+  --header-text-color: #4e2a3c;
+  --header-font-family: "Pirata One", cursive;
+}
+body {
+  background-color: var(--main-bg-color);
+}
+.wrapper {
+  margin: auto;
+}
+
+header {
+  background-color: var(--body-text-color);
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  font-family: var(--header-font-family);
+  color: var(--header-text-color);
+  font-size: 5rem;
+}
+
+h2 {
+  text-align: center;
+  font-family: var(--header-font-family);
+}
+
+.homebutton:hover {
+  text-decoration: none;
+}
+
+.base-subhead {
+  color: var(--main-bg-color);
+  font-family: var(--header-font-family);
+  font-size: 1rem;
+  margin-bottom: 0rem;
+  padding-bottom: 0.25rem;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
+nav {
+  background-color: var(--header-text-color);
+  text-align: center;
+  width: 100%;
+}
+
+.navlist {
+  display: inline-flex;
+  list-style: none;
+  padding-left: 0;
+  padding-right: 1rem;
+}
+
+.navlist li {
+  padding: 0.2rem;
+  padding-top: 1rem;
+  font-size: 1.5rem;
+  margin: 0 4rem 0 4rem;
+  font-family: var(--header-font-family);
+}
+
+.navlist a {
+  color: var(--main-bg-color);
+}
+
+footer {
+  background-color: var(--header-text-color);
+  text-align: center;
+  width: 100%;
+}
+
+.ig-logo {
+  width: 2.25rem;
+}
+.fb-logo {
+  width: 3rem;
+}
+.yt-logo {
+  width: 3rem;
+}
+.foot-list {
+  display: inline-flex;
+  list-style: none;
+}
+.foot-list li {
+  padding: 0.2rem;
+  padding-top: 1rem;
+  font-size: 1.5rem;
+  margin: 0 4rem 0 2rem;
+}
+
+.wrapper {
+  max-width: 70%;
+  margin-top: 0.5rem;
+}
+
+.bodyhead {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.body-sub-head {
+  color: var(--header-text-color);
+  font-size: 3rem;
+}
+
+.streaming-links {
+  display: inline-flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+.streaming-links li {
+  padding: 0.2rem;
+  padding-top: 1rem;
+  font-size: 1.5rem;
+  margin: 0 4rem 0 4rem;
+}
+
+.spotify-logo {
+  width: 3rem;
+}
+.bandcamp-logo {
+  width: 2.25rem;
+}
+.applemusic-logo {
+  width: 2.5rem;
+}
+
+#albumcover {
+  padding-bottom: 2rem;
+}
+.centerme {
+  display: flex;
+  justify-content: center;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  margin-bottom: 2rem;
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
